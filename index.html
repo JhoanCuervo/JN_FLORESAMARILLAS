@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
     <link rel="Stylesheet" href="style.css">
     <title>Flower</title>
 </head>
@@ -49,8 +52,42 @@
       💛 Amarillito 💛
     </button>
 
-    <button class="text-foryou" onclick="allAmarillo()">
-      💌 Mensajito 💌
+    <button class="text-foryou" onclick="FlorToCarta()">
+      💌 Cartica 💌
+    </button>
+  </div>
+  <div class="flower2 textoMiAmor d-none">
+    <div style="text-align: center;">
+      <img src="Imagen.jpg" alt="">
+    </div>
+    <p class="textoMiAmor titleMiAmor">
+      Mi amor! 💌💜🧡
+    </p>
+    <p>
+      Quiero que sepas cuánto te amo y cómo pienso en ti todos los días, a pesar de la distancia que nos separa. 
+      Esta flor amarilla digital es solo un pequeño gesto de mi amor para recordarte lo especial que eres para mí. 🐧🏵️
+    </p>
+    <p>
+      Mi mayor deseo es hacerte feliz y aunque no estemos juntos en este momento, cada 
+      vez que pienso en ti y cada acción que tomo está dirigido a hacerte sonreír. Eres mi alegría, mi motivación y mi amor verdadero.
+    </p>
+    <p>
+      Te extraño mucho, pero nuestra conexión y amor son más fuertes que cualquier distancia. ¡Siempre estás en mi corazón!
+    </p>
+    <p class="cancionMiAmor">
+      Cancioncita 🎙️:
+      <br>
+      <a href="https://www.youtube.com/watch?v=x-0KoCAV4mc">Mi Persona Favorita</a>
+    </p>
+   
+    <p>
+      Con todo mi amor,
+    </p>
+    <p>
+     Tu Novio 🧡
+    </p>
+    <button class="florecita " onclick="cartaToFlor()">
+      🏵️ Florecita 🏵️
     </button>
   </div>
 </body>
@@ -80,6 +117,15 @@
 
     $(".f-amarilla").removeClass("d-none");
     $(".f-morada").addClass("d-none");
+  }
+
+  const cartaToFlor = () => {
+    $(".flower").removeClass("d-none")
+    $(".flower2").addClass("d-none")
+  }
+  const FlorToCarta = () => {
+    $(".flower").addClass("d-none")
+    $(".flower2").removeClass("d-none")
   }
 </script>
 </html>

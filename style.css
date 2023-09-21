@@ -28,6 +28,7 @@ body {
   animation: pulsate 2s infinite;
 }
 
+
 .text-above,
 .text-above1,
 .text-below,
@@ -280,4 +281,54 @@ body {
 .Petal3M {
   background: radial-gradient(circle, #957698, #a60cb4);
   filter: drop-shadow(0 0 2px #ec21ff);
+}
+
+.flower2 {
+  width: 350px;
+  margin: 20px auto;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  background-color: #000;
+}
+.textoMiAmor{
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+.titleMiAmor{
+  font-size: 2rem;
+}
+.cancionMiAmor{
+  font-size: 1.3rem;
+}
+img{
+  width: 230px;
+  height: 229px;
+  border-radius: 255px;
+}
+a{
+  color: #f92f60;
+  text-decoration: none;
+}
+.florecita{
+  background: transparent;
+  border: 1px solid #ff6723;
+    color: #ff6723;
+  border-radius: 10px;
+  padding: 4px 4px;
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
+}
+.florecita:hover {
+  background: transparent;
+  
+  border: 1px solid #c790f1;
+  color: #c790f1;
+  border-radius: 10px;
+  padding: 4px 4px;
+  position: absolute;
+  text-align: center;
+  font-size: 25px;
 }
