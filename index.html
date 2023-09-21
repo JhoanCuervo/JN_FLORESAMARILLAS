@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div class="flower">
+<div class="flower ">
     <div class="text-above">Para Mi Pinguinita 🐧</div>
     <div class="text-above1 f-amarilla">Tu Flor Amarillita 🏵️</div>
     <div class="text-above1 f-morada d-none">Tu Flor Moradita 🌺</div>
@@ -56,7 +56,7 @@
       💌 Cartica 💌
     </button>
   </div>
-  <div class="flower2 textoMiAmor d-none">
+  <div class="flower2 textoMiAmor d-none display-none">
     <div style="text-align: center;">
       <img src="Imagen.jpg" alt="">
     </div>
@@ -119,13 +119,39 @@
     $(".f-morada").addClass("d-none");
   }
 
-  const cartaToFlor = () => {
+  const cartaToFlor1 = () => {
     $(".flower").removeClass("d-none")
     $(".flower2").addClass("d-none")
   }
+
+
+  const cartaToFlor = () => {
+    $(".flower2").addClass("display-none");
+    setTimeout(function(){
+      $(".flower2").addClass("d-none")
+      $(".flower").removeClass("d-none")
+
+      setTimeout(function(){
+        $(".flower2").removeClass("display-none");
+
+        $(".flower").removeClass("display-none")
+      }, 50);
+    }, 600);
+  }
+
   const FlorToCarta = () => {
-    $(".flower").addClass("d-none")
-    $(".flower2").removeClass("d-none")
+    $(".flower").addClass("display-none");
+    $(".flower2").removeClass("display-none");
+    setTimeout(function(){
+      $(".flower").addClass("d-none")
+      $(".flower2").removeClass("d-none")
+
+      setTimeout(function(){
+        $(".flower2").addClass("display-view")
+
+        $(".flower2").removeClass("display-view")
+      }, 50);
+    }, 600);
   }
 </script>
 </html>
